@@ -15,40 +15,44 @@ I evaluated the model performance across different batch sizes to find the optim
 ![img_6.png](img_6.png)
 
 Result: Found the batch size of 64 ideal for more accuracy and batch size of 128 ideal for the combination of accuracy to loss ratio.
+
 ![img_7.png](img_7.png)
 
 ### Experiment 2: Dropout
 By varying dropout rates (0.2, 0.4 & 0.5), I discovered that a dropout rate of 0.4 provides the best compromise between accuracy and loss for the model when evaluating testing data.
+
 ![img_8.png](img_8.png)
 
 ### Experiment 3: Convolution and Pooling Layers
 The experiment on varying the number of convolution and pooling layers indicated that models with more layers show improved generalization capabilities, particularly noted by the decreased discrepancy between training and testing accuracy.
+
 ![img_9.png](img_9.png)
 
 ### Experiment 4: Activation Function
 Among the tested activation functions (ReLU, Tanh, Sigmoid, Swish), ReLU demonstrated the best performance in terms of achieving the highest accuracy and lowest loss on test data.
+
 ![img_11.png](img_11.png)
 ![img_10.png](img_10.png)
 
 ## Technical Implementation
 
 ### Dependencies
-TensorFlow: For building and training the CNN models.
-Keras: TensorFlow's high-level API for easy model construction.
-NumPy: For numerical operations and data manipulation.
-Matplotlib: For plotting and visualizing the data and results.
+- TensorFlow: For building and training the CNN models.
+- Keras: TensorFlow's high-level API for easy model construction.
+- NumPy: For numerical operations and data manipulation.
+- Matplotlib: For plotting and visualizing the data and results.
 
 ### File Structure
-BatchNormalization.ipynb: Analyzes the impact of batch normalization on model performance.
-DropOutRates.ipynb: Examines the effects of varying dropout rates.
-ConvolutionPoolingLayers.ipynb: Investigates how different numbers of convolution and pooling layers affect the model.
-ActivationFunction.ipynb: Compares the performance of various activation functions.
+- BatchNormalization.ipynb: Analyzes the impact of batch normalization on model performance.
+- DropOutRates.ipynb: Examines the effects of varying dropout rates.
+- ConvolutionPoolingLayers.ipynb: Investigates how different numbers of convolution and pooling layers affect the model.
+- ActivationFunction.ipynb: Compares the performance of various activation functions.
 
 ## Usage Instructions
-Ensure all dependencies are installed in your Python environment.
-Clone the repository and navigate to the project directory.
-Open and execute each notebook to replicate the experiments or to conduct your analysis.
-Visualize the results within the notebooks for comprehensive insights into the model's performance under different architectural modifications.
+- Ensure all dependencies are installed in your Python environment.
+- Clone the repository and navigate to the project directory.
+- Open and execute each notebook to replicate the experiments or to conduct your analysis.
+- Visualize the results within the notebooks for comprehensive insights into the model's performance under different architectural modifications.
 
 ## Conclusion
 This detailed exploration provides valuable insights into how specific architectural choices can significantly influence the performance of CNN models. These findings underscore the importance of thoughtful experimentation in the design of deep learning models for image classification tasks.
