@@ -3,6 +3,10 @@
 
 ![img.png](img.png)
 
+## Contributors
+- Aswin Shriram Thiagarajan
+- Pramithi Jagdish
+
 ## Experiment Details and Findings
 Created, compiled and trained base CNN model with 7 layers and Relu activation Fn, plotted the output Accuracy and LossResult: Found the Accuracy and loss to stabilize at around 30 Epochs for training data with respective values as shown:
 
